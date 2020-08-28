@@ -8,11 +8,15 @@ import android.support.v4.app.FragmentTransaction;
 import java.util.ArrayList;
 
 import blcs.lwb.utils.R;
+import blcs.lwb.utils.fragment.otherFragment.Jetpack.NavigationFragment;
+import blcs.lwb.utils.fragment.otherFragment.Jetpack.PagingFragment;
 import blcs.lwb.utils.fragment.otherFragment.Jetpack.RoomFragment;
 import blcs.lwb.utils.fragment.otherFragment.Jetpack.DataBindingFragment;
 import blcs.lwb.utils.fragment.otherFragment.Jetpack.LifecycleFragment;
 import blcs.lwb.utils.fragment.otherFragment.Jetpack.LiveDataFragment;
 import blcs.lwb.utils.fragment.otherFragment.Jetpack.ViewModelFragment;
+import blcs.lwb.utils.fragment.otherFragment.Jetpack.WorkManagerFragment;
+import blcs.lwb.utils.fragment.otherFragment.UnusedFunctionFragment;
 import blcs.lwb.utils.fragment.viewFragment.BannerFragment;
 import blcs.lwb.utils.fragment.viewFragment.BarQrCodeFragment;
 import blcs.lwb.utils.fragment.viewFragment.BaseAdapterFragment.AnimationRecyclerFragment;
@@ -31,6 +35,7 @@ import blcs.lwb.utils.fragment.otherFragment.BlogsFragment;
 import blcs.lwb.utils.fragment.viewFragment.BottomNavigationFragment;
 import blcs.lwb.utils.fragment.viewFragment.Color_SpiderFragment;
 import blcs.lwb.utils.fragment.viewFragment.Common_DialogFragment;
+import blcs.lwb.utils.fragment.viewFragment.CoordinatorLayoutFragment;
 import blcs.lwb.utils.fragment.viewFragment.DialogBottomFragment;
 import blcs.lwb.utils.fragment.viewFragment.DrawerLayoutFragment;
 import blcs.lwb.utils.fragment.toolFragment.EditTextUtilsFragment;
@@ -38,6 +43,7 @@ import blcs.lwb.utils.fragment.toolFragment.FileUtilsFragment;
 import blcs.lwb.utils.fragment.otherFragment.FunciotnIntroFragment;
 import blcs.lwb.utils.fragment.toolFragment.IntentUtilsFragment;
 import blcs.lwb.utils.fragment.otherFragment.Jetpack.JetpackFragment;
+import blcs.lwb.utils.fragment.viewFragment.FloatingWindowFragment;
 import blcs.lwb.utils.fragment.viewFragment.LabelListFragment;
 import blcs.lwb.utils.fragment.otherFragment.DependConfigFragment;
 import blcs.lwb.utils.fragment.LearnWebsiteFragment;
@@ -186,11 +192,14 @@ public class FramentManages {
         public final static String OtherCharts = "OtherCharts";
         public final static String ScrollingCharts = "ScrollingCharts";
     public final static String BarQrCode = "条形码/二维码";
+    public final static String CoordinatorLayout = "CoordinatorLayout";
+    public final static String FloatingWindow = "悬浮窗口";
     /**
      * 其他
      */
     public final static String BLOGS = "博客";
     public final static String VersionUpdate = "版本更新";
+    public final static String UnusedFunction = "不常用功能";
         public final static String FunciotnIntro = "功能介绍";
     public final static String CustomActivityOnCrash = "全局异常捕获";
     public final static String DependConfig = "依赖配置";
@@ -201,8 +210,11 @@ public class FramentManages {
         public final static String DataBinding = "DataBinding";
         public final static String Lifecycle = "Lifecycle";
         public final static String LiveData = "LiveData";
+        public final static String Navigation = "Navigation";
+        public final static String Paging = "Paging";
         public final static String ViewModel = "ViewModel";
         public final static String Room = "Room";
+        public final static String WorkManager = "WorkManager";
 
     /**
      * 这个在Fragment中不能new出来,只能在Activity中new，每个Activity对应一个List_fragment来管理
@@ -323,6 +335,8 @@ public class FramentManages {
                 return new PickerFragment();
             case FramentManages.VersionUpdate:
                 return new VersionUpdateFragment();
+            case FramentManages.UnusedFunction:
+                return new UnusedFunctionFragment();
             case FramentManages.LabelList:
                 return new LabelListFragment();
             case FramentManages.SoundAndVibration:
@@ -383,10 +397,20 @@ public class FramentManages {
                 return new LifecycleFragment();
             case FramentManages.LiveData:
                 return new LiveDataFragment();
+            case FramentManages.Navigation:
+                return new NavigationFragment();
+            case FramentManages.Paging:
+                return new PagingFragment();
             case FramentManages.ViewModel:
                 return new ViewModelFragment();
             case FramentManages.Room:
                 return new RoomFragment();
+            case FramentManages.WorkManager:
+                return new WorkManagerFragment();
+            case FramentManages.CoordinatorLayout:
+                return new CoordinatorLayoutFragment();
+            case FramentManages.FloatingWindow:
+                return new FloatingWindowFragment();
         }
     }
 

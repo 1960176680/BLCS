@@ -124,6 +124,8 @@
 
 
     <!--博客-->
+    <string name="URL_Paging">https://www.jianshu.com/p/10bf4bf59122</string>
+    <string name="URL_Navigation">https://www.jianshu.com/p/230427ae6830</string>
     <string name="URL_ViewModel">https://www.jianshu.com/p/bc34c2db244f</string>
     <string name="URL_LiveData">https://www.jianshu.com/p/6651046cd4d8</string>
     <string name="URL_Lifecycle2">https://www.jianshu.com/p/798354ed17b9</string>
@@ -178,7 +180,7 @@
     <string name="Url_Android">http://hukai.me/android-training-course-in-chinese/index.html</string>
     <string name="Url_NDK">https://developer.android.google.cn/ndk/</string>
     <string name="Url_Kotlin">https://www.kotlincn.net/docs/reference/extensions.html</string>
-    <string name="Url_Java">https://snailclimb.gitee.io/javaguide/#/?id=java</string>
+    <string name="Url_Java">https://snailclimb.gitee.io/javaguide/#/</string>
     <string name="Url_Git">https://git-scm.com/book/zh/v2</string>
     <!-- GitHub资源归类 -->
     <string name="Url_GitDemo1">https://github.com/open-android/Android</string>
@@ -204,5 +206,8 @@
     <string name="Url_GG">http://www.atguigu.com/android_video.shtml#android</string>
     <string name="Url_zc">https://www.zcool.com.cn/work/ZMzY0MDAwMjA=.html</string>
     <string name="viewModel">1.添加依赖： implementation androidx.lifecycle:lifecycle-extensions:2.1.0 \n 2.继承ViewModel或AndroidViewModel \n 3.使用： ViewModelProviders.of(this).get(DemoViewModel.class)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
